@@ -1,6 +1,5 @@
 let firstJSON = [
 
-    [
         {
           "image": "img/1.jpg",
           "location": "Haryana",
@@ -441,6 +440,5 @@ let firstJSON = [
           "language": "English",
           "license_plate": "unknown"
         }
-      ]
-
 ]
+
