@@ -67,37 +67,39 @@ img {
     transform: scale(1.8);
   }
 
+ /* Laptop or larger */
+  
+ input {
+  font-size: 3rem;
+  color: white;
+  height: 5rem;
+  width: 40rem;
+  margin-top: 0;
+  margin-bottom: 2%;
+  cursor: text;
+  padding: 10px;
+  border: 9px double;
+  background-color: rgb(255, 166, 0);
+ }
 
-  button,input {
-    font-family: 'Abelard'; 
-    margin-right: 30%;
-    margin-left: 30%;
-    display: inline;
-   
-  }
-
-  input {
-   font-size: 3rem;
-   color: white;
-   height: 5rem;
-   width: 40rem;
-   margin-top: 0;
-   margin-bottom: 2%;
-   margin-right:0 ;
-   cursor: text;
-   padding: 10px;
-   border: 9px double;
-   background-color: rgb(255, 166, 0);
-  }
+ button,input {
+  font-family: 'Abelard'; 
+  margin-left: 15%;
+  display: inline;
+ 
+}
 
 button{ 
-   margin-left: 0;
-    height: 6rem;
-    width: 12rem;
-    font-size: 2rem;
-    border-radius: 20%;
-    cursor: pointer;   
+ margin-left: 0;
+  height: 6rem;
+  width: 12rem;
+  font-size: 2rem;
+  border-radius: 20%;
+  cursor: pointer;  
+  margin-right: 5%
 }
+
+
 
 /* Classes */
 
@@ -173,10 +175,6 @@ section#Placeholder{
     margin-right: auto;
     margin-left: auto;
 }
-
- /* Laptop or larger */
-
- @media only screen and (min-width: 1024px) {}
 
 
 /* Tablet */
