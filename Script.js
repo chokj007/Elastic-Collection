@@ -594,7 +594,7 @@ document.getElementById('truckImage').addEventListener('click', () => {
     counterVar = 0;
   }
   background.style.backgroundImage = imageArray[counterVar];
-  background.style.backgroundRepeat= "no-repeat"
+  background.style.backgroundRepeat= "repeat"
   background.style.backgroundPosition= "center"
   background.style.backgroundSize= "cover"
 });
