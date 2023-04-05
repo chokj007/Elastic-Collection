@@ -465,7 +465,7 @@ holder.style.image = "100px"
   
     holderCounter++ 
 
-    Placeholder.innerHTML = "<p>"+ "Written content:" + "<p>"+ firstJSON[holderCounter].written_content + "<br>" + "Translation: " + firstJSON[holderCounter].translation + "<br>" + "Location: " + firstJSON[holderCounter].location + "<br>" + "Language: " + firstJSON[holderCounter].language
+    Placeholder.innerHTML = "<p>"+ "Written content: "+ firstJSON[holderCounter].written_content + "<br>" + "<br>"+ "Translation: " + firstJSON[holderCounter].translation + "<br>" + "<br>" + "Location: " + firstJSON[holderCounter].location + "<br>"+ "<br>" + "Language: " + firstJSON[holderCounter].language + "<p>"
     truckImage.src = firstJSON[holderCounter].image;
 
     
