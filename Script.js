@@ -450,8 +450,6 @@ let firstJSON = [
   }
 ]
 
-// CREATE DIFFERENT ARRAY OF BKG COLOR PALLATTES to circle through with the images 
-
 for(let i=0; i<firstJSON.length; i++){ 
 
   // For every entry in this JSON file, we are goign to: 
@@ -465,7 +463,7 @@ holder.style.image = "100px"
   
     holderCounter++ 
 
-    Placeholder.innerHTML = "<p>"+ "Written content: "+ firstJSON[holderCounter].written_content + "<br>" + "<br>"+ "Translation: " + firstJSON[holderCounter].translation + "<br>" + "<br>" + "Location: " + firstJSON[holderCounter].location + "<br>"+ "<br>" + "Language: " + firstJSON[holderCounter].language + "<p>"
+    Placeholder.innerHTML = "<span class='written'> Written content: " + "</span>" + "<br>" + firstJSON[holderCounter].written_content + "<br>" + "<br>"+ "<span class='written'> Translation: </span>" + "<br>" + firstJSON[holderCounter].translation + "<br>" + "<br>" + "<span class='written'> Location: "+ "</span>" + "<br>" + firstJSON[holderCounter].location + "<br>"+ "<br>" + "<span class= 'written'> Language: </span> " + "<br>" + firstJSON[holderCounter].language 
     truckImage.src = firstJSON[holderCounter].image;
 
     
@@ -552,23 +550,36 @@ holder.style.image = "100px"
   
 const hornSounds = document.getElementById("hornSounds");
 const mySound = document.getElementById("mySound");
+const alarm = document.querySelector('#hornSounds');
 
-let isPlaying = false;
+let Playing = false;
 
 hornSounds.addEventListener("click", function() {
- 
-  if (isPlaying) {
+  if (Playing) {
     mySound.pause();
-    isPlaying = false;
+    Playing = false;
   } else {
     mySound.play();
-    isPlaying = true;
+    Playing = true;
     hornSounds.classList.add("animate");
     setTimeout(function() {
       hornSounds.classList.remove("animate");
     }, 3000);
   }
 });
+
+alarm.addEventListener('click', function() {
+  if (alarm.classList.contains('active')) {
+    alarm.classList.remove('active');
+    hornSounds.classList.remove("animate");
+    mySound.pause();
+    Playing = false;
+  } else {
+    alarm.classList.add('active');
+    // Add your logic for starting another animation and sound here
+  }
+});
+
 
 
 let counterVar = 0;

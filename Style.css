@@ -16,10 +16,10 @@
 }
 
 p{ 
-    font-family: 'Abelard'; 
-    padding: 5px;
+    font-family: 'Duplet'; 
+    padding: 10px;
     margin: 2px; 
-    font-size: 0.6em
+    font-size: 1.8rem;
 }
 
 div{
@@ -27,11 +27,12 @@ div{
 }
 
 section{
-    background-color: rgb(255, 255, 255);
-    margin: 22%;
+    background-color: rgb(228, 221, 207);
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 2%;
-    padding: 5%; 
+    padding: 34px; 
+    border: 30px dotted #ffbf00; 
     border-radius: 20px;
     width: 45%
 }
@@ -40,7 +41,7 @@ section{
 h1{ 
     font-family: 'Rye', cursive;
     color: rgb(255, 179, 0);
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align:center;
     margin: 3%;
 }
@@ -48,6 +49,7 @@ h1{
 
 
 img {
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -84,7 +86,7 @@ img {
  }
 
  button,input {
-  font-family: 'Abelard'; 
+  font-family: 'Duplet'; 
   margin-left: 25%;
   display: inline;
  
@@ -138,7 +140,12 @@ button{
     text-align: center;
 }
 
+.written { 
+  font-family: 'Rye', cursive;
+}
+
 /* IDs */
+
 
 #main:hover { 
     color: red;
@@ -155,11 +162,38 @@ button{
 
 #Placeholder { 
 font-size: 1.8rem;
-font-family: 'Abelard';
+font-family: 'Duplet';
+width: fit-content
 }
 
 #hornSounds:hover { 
-    opacity: 0.7;
+  opacity: 0.7;
+  animation: ringing 0.13s ease-in-out infinite;
+}
+
+@keyframes ringing {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+
+  50% {
+    transform: rotate(4deg);
+  }
+
+  75% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.alarm.active .alarm-bell {
+  animation-play-state: running;
 }
 
 section#holder { 
@@ -169,7 +203,8 @@ section#holder {
 
 section#Placeholder{ 
     margin: 2%;
-    padding: 5%
+    padding: 5%;
+    border: none
 }
 
 #hornSounds { 
@@ -299,7 +334,7 @@ h1{
     }
 
 button,input {
-    font-family: 'Abelard'; 
+    font-family: 'Duplet'; 
     margin-right: auto;
     margin-left: auto;
     display: block;
