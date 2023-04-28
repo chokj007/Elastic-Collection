@@ -609,3 +609,4 @@ document.getElementById('truckImage').addEventListener('click', () => {
   background.style.backgroundPosition= "center"
   background.style.backgroundSize= "cover"
 });
+
