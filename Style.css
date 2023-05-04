@@ -15,6 +15,23 @@
     padding-bottom: 5%
 }
 
+h2,a{ 
+  font-family: 'Rye', cursive;
+  color: rgb(255, 98, 0);
+  font-size: 3rem;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+}
+
+h2{ 
+  color: rgb(0, 255, 213);
+  margin-top: 0; 
+  opacity: 0.7;
+}
+
 p{ 
     font-family: 'Duplet'; 
     padding: 10px;
@@ -54,7 +71,7 @@ img {
     margin-right: auto;
     display: block;
     height: 60%;
-    width: 60%;
+    width: 70%;
     cursor: pointer;
 }
 
@@ -68,7 +85,7 @@ img {
     border: 5px dotted #00bbff;
     background-color: yellow;
     z-index: 10;
-    transform: scale(1.8);
+    transform: scale(1.2);
   }
 
   
@@ -77,8 +94,8 @@ img {
   color: white;
   height: 5rem;
   width: 30rem;
-  margin-top: 0;
-  margin-bottom: 2%;
+  margin-top: 10%;
+  margin-bottom: 1%;
   cursor: text;
   padding: 10px;
   border: 9px double;
@@ -87,7 +104,7 @@ img {
 
  button,input {
   font-family: 'Duplet'; 
-  margin-left: 25%;
+  margin-left: 34%;
   display: inline;
  
 }
@@ -99,12 +116,10 @@ button{
   font-size: 2rem;
   border-radius: 20%;
   cursor: pointer;  
-  margin-right: 5%;
+  margin-right: 4%;
   border: 6px double #00ccff;
   background-color: rgb(255, 255, 255);
 }
-
-
 
 /* Classes */
 
@@ -116,7 +131,7 @@ button{
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px; 
     align-items: center;
     justify-items: center;
@@ -129,7 +144,6 @@ button{
     border: 3px dashed #ffbf00; 
     padding: 5%;
     height: 75%;
-    width: 75%;
   }
   
   .no-results{ 
@@ -142,6 +156,10 @@ button{
 
 .written { 
   font-family: 'Rye', cursive;
+}
+
+.page2{ 
+  margin-top: 5%
 }
 
 /* IDs */
@@ -158,6 +176,9 @@ button{
 
 #holder { 
     gap: 20px;
+    /* cursor: url('Arrow.png'), auto; */
+    cursor: crosshair, auto;
+
 }
 
 #Placeholder { 
@@ -192,10 +213,6 @@ width: fit-content
   }
 }
 
-.alarm.active .alarm-bell {
-  animation-play-state: running;
-}
-
 section#holder { 
     padding: 0;
     padding-top: 2%
@@ -214,7 +231,6 @@ section#Placeholder{
     margin-left: auto;
 }
 
-
 /* Tablet */
 @media (min-width:768px) and (max-width: 1024px) {
 
@@ -223,8 +239,10 @@ background-color: rgb(204, 50, 140); }
 
 h1 { 
     font-size: 4rem;
-    text-align:center;
-    margin: 3%;
+}
+
+h2,a{ 
+  font-size: 2.5rem;
 }
 
 section{ 
@@ -249,7 +267,6 @@ section{
   }
 
   input#searchInput {
-    margin-top: 20px;
     height: 2rem;
     width: 20rem;
     font-size: 2rem;
@@ -294,6 +311,7 @@ section{
 
   div.result { 
     opacity: 1;
+    padding: 10%
   }
 
   div.result:hover { 
@@ -320,8 +338,10 @@ section{
 
 h1{ 
         font-size: 2rem;
-        text-align:center;
-        margin: 3%;
+    }
+
+    h2,a{ 
+      font-size: 1rem;
     }
 
     p{
@@ -341,7 +361,6 @@ button,input {
   }
 
   input#searchInput {
-    margin-top: 20px;
     height: 2rem;
     width: 17rem;
     font-size: 2rem;

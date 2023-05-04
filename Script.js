@@ -546,40 +546,22 @@ holder.style.image = "100px"
       });
 }
     
-    
-  
-const hornSounds = document.getElementById("hornSounds");
-const mySound = document.getElementById("mySound");
-const alarm = document.querySelector('#hornSounds');
 
-let Playing = false;
+let hornSounds = document.getElementById('hornSounds')
+let playing = false
 
-hornSounds.addEventListener("click", function() {
-  if (Playing) {
-    mySound.pause();
-    Playing = false;
-  } else {
-    mySound.play();
-    Playing = true;
-    hornSounds.classList.add("animate");
-    setTimeout(function() {
-      hornSounds.classList.remove("animate");
-    }, 3000);
-  }
-});
+hornSounds.addEventListener('click', ()=> { 
+  if(playing === false) {
+let audio = document.getElementById('audio')
+audio.play()}
+else { 
+  audio.pause()
+}
 
-alarm.addEventListener('click', function() {
-  if (alarm.classList.contains('active')) {
-    alarm.classList.remove('active');
-    hornSounds.classList.remove("animate");
-    mySound.pause();
-    Playing = false;
-  } else {
-    alarm.classList.add('active');
-    // Add your logic for starting another animation and sound here
-  }
-});
+playing =! playing
+// Not playing
 
+})
 
 
 let counterVar = 0;
