@@ -33,7 +33,7 @@ h2{
 }
 
 p{ 
-    font-family: 'Duplet'; 
+    font-family: 'Duplet','Poppins', sans-serif; 
     padding: 10px;
     margin: 2px; 
     font-size: 1.8rem;
@@ -102,7 +102,7 @@ img {
  }
 
  button,input {
-  font-family: 'Duplet'; 
+  font-family: 'Duplet','Poppins', sans-serif; 
   margin-left: 34%;
   display: inline;
  
@@ -184,7 +184,7 @@ button{
 
 #Placeholder { 
 font-size: 1.8rem;
-font-family: 'Duplet';
+font-family: 'Duplet','Poppins', sans-serif;
 width: fit-content
 }
 
@@ -355,7 +355,7 @@ h1{
     }
 
 button,input {
-    font-family: 'Duplet'; 
+    font-family: 'Duplet','Poppins', sans-serif; 
     margin-right: auto;
     margin-left: auto;
     display: block;
