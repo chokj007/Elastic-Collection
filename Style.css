@@ -194,6 +194,10 @@ width: fit-content
   animation: ringing 0.13s ease-in-out infinite;
 }
 
+#keyword { 
+  font-size: 2em
+}
+
 @keyframes ringing {
   0% {
     transform: rotate(0deg);
